@@ -7,4 +7,7 @@ pnpm dev
 pnpm start
 pnpm format
 ```
-## TODO /Optimal route 
+## TODO 
+1. /optimal route
+2. add swagger for API docs
+3. unit test
