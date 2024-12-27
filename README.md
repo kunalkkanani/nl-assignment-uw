@@ -1,13 +1,8 @@
 # nl-assignment-uw
 
-# Run in development mode
-
+## Commands
+```bash
 pnpm dev
-
-# Run in production mode
-
 pnpm start
-
-# Format code
-
 pnpm format
+```
