@@ -5,6 +5,7 @@ import cors from 'cors';
 import { apiLimiter } from './middleware/rateLimiter.js';
 import countryRoutes from './routes/country.js';
 import salesRepRoutes from './routes/salesRep.js';
+import optimalRoutes from './routes/optimal.js';
 
 const HOST = process.env.HOST || 'localhost';
 const PORT = process.env.PORT || 3000;
@@ -18,6 +19,7 @@ app.use(express.json());
 app.use('/', apiLimiter);
 app.use('/', countryRoutes);
 app.use('/', salesRepRoutes);
+app.use('/', optimalRoutes);
 
 app.listen(PORT, () => {
   console.log(`Server is running on http://${HOST}:${PORT}`);
